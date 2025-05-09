@@ -26,6 +26,19 @@ npm run dev
 
 The application will be available at http://localhost:5173
 
+### API Configuration for Local Development
+
+Before running the application locally, you need to update the API URL in `frontend/src/constants.js`:
+
+1. Open `frontend/src/constants.js`
+2. Comment out the production API URL and uncomment the local development URL:
+   ```javascript
+   // API configuration
+   // export const API_URL = 'https://wiredtranslation-backend.onrender.com'
+   // For local development, uncomment the line below and comment out the line above
+   export const API_URL = 'http://localhost:8000'
+   ```
+
 ## 🔧 Features
 
 - Translates text into Spanish, German, French, Italian, and Danish
